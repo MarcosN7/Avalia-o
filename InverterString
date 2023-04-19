@@ -1,0 +1,14 @@
+def inverter_string():
+    while True:
+        string = input("Digite a string que deseja inverter (digite 0 para encerrar): ")
+        if string == "0":
+            print("Encerrando o programa...")
+            break
+        else:
+            string_upper = string.upper()
+            string_invertida = ""
+            for i in range(len(string_upper)-1, -1, -1):
+                string_invertida += string_upper[i]
+            print("String invertida:", string_invertida)
+
+inverter_string()
